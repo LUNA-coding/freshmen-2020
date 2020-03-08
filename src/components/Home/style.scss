@@ -1,0 +1,28 @@
+#btn-apply {
+  #text-apply, .fa-paper-plane {
+    position: relative;
+    transition: scale .3s ease, transform .5s ease;
+  }
+
+  &:hover {
+    #text-apply {
+      display: inline-block;
+      transform: scale(1.1);
+    }
+
+    .fa-paper-plane {
+      transform: translateX(-20px) translateY(20px);
+    }
+  }
+
+  &:active, &.active {
+    #text-apply {
+      display: inline-block;
+      transform: scale(1.1);
+    }
+
+    .fa-paper-plane {
+      transform: scale(1.5) translateX(60px) translateY(-60px);
+    }
+  }
+}

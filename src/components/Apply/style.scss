@@ -1,0 +1,53 @@
+@import "../../variables";
+
+$progress-number-size: 25px;
+
+.progress-number {
+  cursor: pointer;
+
+  width: $progress-number-size;
+  height: $progress-number-size;
+  padding: .5rem;
+  margin-right: .3rem;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  color: #ffffff;
+  font-size: .75rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    border: 2px solid $success-color;
+    color: $success-color;
+  }
+
+  &.invalid {
+    border: 2px solid $danger-color;
+    color: $danger-color;
+  }
+}
+
+.progress-link {
+  margin-right: .3rem;
+
+  color: #ffffff;
+  font-size: .75rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    color: $success-color;
+  }
+
+  &.invalid {
+    color: $danger-color;
+  }
+}
