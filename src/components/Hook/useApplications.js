@@ -56,7 +56,7 @@ const useApplications = () => {
     const extractData = studentId => {
         const grade = parseInt(studentId.slice(0, 1))>3?4:parseInt(studentId.slice(0, 1));
         const majorArray = [1, 2, 3, 3, 4, 4];
-        const major = majorArray[parseInt(studentId.slice(1, 2))];
+        const major = majorArray[parseInt(studentId.slice(1, 2))-1];
 
         // console.log(grade, major);
         return {grade, major};
